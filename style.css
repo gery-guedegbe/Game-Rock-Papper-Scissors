@@ -1,0 +1,135 @@
+:root {
+    --primary: #00d9ff;
+    --secondary: #ff8800;
+    --back: #f1f1f1;
+    --action: #ff6565;
+    --border-radius: 15px;
+    --btn-padding: 20px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--back);
+    font-family: sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .score {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 20px;
+    text-align: center;
+    font-size: 25px;
+    background-color: white;
+    padding: var(--btn-padding);
+    border-radius: 15px;
+  }
+  
+  #reset {
+    font-size: 12px;
+    grid-column: span 2;
+    cursor: pointer;
+  }
+  
+  #reset:hover {
+    color: var(--action);
+  }
+  
+  .action {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  #message {
+    font-size: 25px;
+  }
+  
+  #next {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: var(--action);
+    color: white;
+    border-radius: var(--border-radius);
+    visibility: hidden;
+    cursor: pointer;
+  }
+  
+  #next.active {
+    visibility: visible;
+  }
+  
+  .jeu {
+    border-top: 1px solid black;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 150px;
+  }
+  
+  .button {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    padding: var(--btn-padding);
+  }
+  
+  .btn-joueur,
+  .btn-computer {
+    border-radius: 15px;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-joueur {
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .btn-joueur:hover {
+    color: var(--primary);
+  }
+  
+  .button p {
+    margin-left: 20px;
+  }
+  
+  .button:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  
+  .btn-joueur.desactivated {
+    background-color: var(--back);
+    cursor: default;
+  }
+  
+  .btn-joueur.desactivated:hover,
+  .btn-joueur.active {
+    color: inherit;
+  }
+  
+  .btn-joueur.active {
+    background-color: var(--primary);
+  }
+  
+  .btn-computer.active {
+    background-color: var(--secondary);
+  }
+
+  /*@media only screen and (max-width: 600px) {
+  body {
+    
+  }
+
+  .score{
+    
+  }
+}*/
