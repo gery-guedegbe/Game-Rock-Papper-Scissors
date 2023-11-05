@@ -124,11 +124,41 @@
     background-color: var(--secondary);
   }
 
-  /*@media only screen and (max-width: 600px) {
-  body {
-    
-  }
+  @media only screen and (max-width: 600px) {
 
+    body{
+       margin: 0;
+       min-height: 100vh;
+    }
+
+    body .score{
+       margin-top:100px;
+       margin-bottom: 30px;
+       gap: 0;
+       padding: 0;
+    }
+
+    .action {
+        
+        margin-top: 10px;
+    }
+
+    .jeu{
+        padding: 2px 5px;
+        gap: 10px;
+    }
+    
+    .button{
+        font-size: 15px;
+        padding: 6px;
+    }
+
+    .choix{
+        margin-top: 20px;
+    }
+  
+
+}
   .score{
     
   }
