@@ -7,7 +7,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="score">
+        <p>Vous</p>
+        <p>Ordinateur</p>
+        <p id="player_score">0</p>
+        <p id="computer_score">0</p>
+        <div id="reset">Recommencer</div>
+    </div>
+
+    <div class="action">
+        <p id="message">A vous de jouer !</p>
+        <div id="next">Tour suivant</div>
+    </div>
+
+    <div class="jeu">
+        <div class="choix">
+            <div class="button btn-joueur" id="pierre">
+                <img src="images/pierre.png" alt="pierre">
+                <p>Pierre</p>
+
+            </div>
+
+            <div class="button btn-joueur" id="feuille">
+                <img src="images/feuille.png" alt="feuille">
+                <p>Feuille</p>
+
+            </div>
+
+            <div class="button btn-joueur" id="ciseaux">
+                <img src="images/ciseaux.png" alt="ciseaux">
+                <p>Ciseaux</p>
+
+            </div>
+        </div>
+
+        <div class="choix">
+            <div class="button btn-computer" id="cpierre">
+                <img src="images/pierre.png" alt="pierre">
+                <p>Pierre</p>
+
+            </div>
+
+            <div class="button btn-computer" id="cfeuille">
+                <img src="images/feuille.png" alt="feuille">
+                <p>Feuille</p>
+
+            </div>
+
+            <div class="button btn-computer" id="cciseaux">
+                <img src="images/ciseaux.png" alt="ciseaux">
+                <p>Ciseaux</p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
